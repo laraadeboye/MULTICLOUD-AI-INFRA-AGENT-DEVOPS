@@ -1,0 +1,25 @@
+# Core
+llama-index==0.12.17
+gradio>=4.0.0
+python-dotenv>=1.0.0
+
+# NumPy version to avoid 2.x compatibility errors
+numpy>=1.23,<2.0
+
+# LLM and embeddings
+llama-index-llms-groq>=0.3.1
+llama-index-embeddings-huggingface>=0.5.4
+llama-index-indices-managed-llama-cloud>=0.1.4
+
+# Force CPU PyTorch
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
+
+
+# Optional: Fast sentence embeddings (if not included via extras)
+sentence-transformers>=2.2.2
+
+# Environment pinning
+# Python version must be <3.12 due to compatibility
+
